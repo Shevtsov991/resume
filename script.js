@@ -7,8 +7,11 @@ console.log(header);
 console.log(main);
 console.log(footer);
 
-function createElement(text, tag, className, place) {
+function createElement(text, tag, className, place, src) {
   let titel = document.createElement(tag);
+  if (tag === "img") {
+    titel.src = src;
+  }
   titel.classList.add(className);
   let upperText = text
     .split(" ")
@@ -39,4 +42,4 @@ createElement(
   main
 );
 createElement("discover now", "button", "btn", main);
-createElement("Mainimg", "img", "mainImg", main);
+createElement("Mainimg", "img", "mainImg", main, "./img.png");
