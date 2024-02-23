@@ -1,3 +1,4 @@
+console.log("1");
 const header = document.querySelector(".header");
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
@@ -24,7 +25,7 @@ function createElement(text, tag, className, place, src) {
   place.appendChild(titel);
 }
 
-createElement("logo", "span", "logo", header);
+//createElement("logo", "span", "logo", "header__logo");
 createElement("home", "li", "navItem", navList);
 createElement("about", "li", "navItem", navList);
 createElement("services", "li", "navItem", navList);
@@ -42,4 +43,3 @@ createElement(
   main
 );
 createElement("discover now", "button", "btn", main);
-createElement("Mainimg", "img", "mainImg", main, "./img.png");
